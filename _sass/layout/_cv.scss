@@ -1,0 +1,153 @@
+/* ==========================================================================
+   CV LAYOUT STYLES
+   ========================================================================== */
+
+/* CV Container */
+.cv-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+  
+  @media (max-width: 768px) {
+    padding: 1.5rem 1rem;
+  }
+}
+
+/* CV Section Headers */
+.cv-section {
+  margin-bottom: 3rem;
+  
+  h2 {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: var(--global-text-color);
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 2px solid var(--global-link-color);
+    
+    @media (max-width: 768px) {
+      font-size: 1.5rem;
+    }
+  }
+}
+
+/* Education & Experience Items */
+.cv-item {
+  margin-bottom: 2.5rem;
+  padding-left: 1.5rem;
+  border-left: 3px solid var(--global-border-color);
+  position: relative;
+  
+  &::before {
+    content: '';
+    position: absolute;
+    left: -7px;
+    top: 0;
+    width: 11px;
+    height: 11px;
+    background: var(--global-link-color);
+    border-radius: 50%;
+    border: 2px solid var(--global-bg-color);
+  }
+  
+  h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+    color: var(--global-text-color);
+  }
+  
+  h4 {
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+    color: var(--global-link-color);
+  }
+  
+  .cv-meta {
+    font-size: 0.95rem;
+    color: var(--global-text-color-light);
+    font-style: italic;
+    margin-bottom: 1rem;
+  }
+  
+  ul {
+    margin-top: 0.75rem;
+    
+    li {
+      margin-bottom: 0.5rem;
+      line-height: 1.6;
+    }
+  }
+  
+  .cv-stack {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    color: var(--global-text-color-light);
+    
+    strong {
+      color: var(--global-text-color);
+    }
+  }
+}
+
+/* Skills Grid */
+.cv-skills {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  
+  @media (max-width: 600px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.skill-category {
+  h4 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--global-link-color);
+    margin-bottom: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+  
+  p {
+    font-size: 0.95rem;
+    line-height: 1.8;
+    color: var(--global-text-color);
+    margin: 0;
+  }
+}
+
+/* Download Button Container */
+.cv-download {
+  text-align: center;
+  margin: 3rem 0 2rem;
+  padding: 2rem;
+  background: var(--global-footer-bg-color);
+  border-radius: 8px;
+  
+  .btn {
+    min-width: 200px;
+  }
+}
+
+/* Archive Single CV Variant */
+.archive__item-cv {
+  padding: 1rem 0;
+  border-bottom: 1px solid var(--global-border-color);
+  
+  &:last-child {
+    border-bottom: none;
+  }
+  
+  .archive__item-title {
+    margin-bottom: 0.25rem;
+  }
+  
+  .archive__item-excerpt {
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+  }
+}

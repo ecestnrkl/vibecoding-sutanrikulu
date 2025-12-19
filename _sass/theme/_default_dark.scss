@@ -3,30 +3,30 @@
    ========================================================================== */
 
 /* Color codes used for the theme */
-$gray                       : #7a8288;
-$dark-gray                  : mix(#000, $gray, 40%);
-$darker-gray                : mix(#000, $gray, 60%);
-$light-gray                 : mix(#fff, $gray, 50%);
-
-$background                 : #474747;
-$background-light           : mix(#fff, $background, 80%);
-$background-lighter         : mix(#fff, $background, 90%);
-$text                       : #ffffff;
-$link                       : #0ea1c5;
-$link-dark                  : mix(#000, $link, 25%);
-$link-light                 : mix(#fff, $link, 25%);
+$ink                        : #e2e8f0;
+$ink-muted                  : #9aa4b2;
+$bg                         : #0f172a;
+$bg-alt                     : #0b1220;
+$surface                    : #162235;
+$border                     : #223044;
+$border-strong              : #2d3b52;
+$accent                     : #22c1b6;
+$accent-strong              : #14a199;
+$accent-warm                : #f59f86;
+$code-bg                    : #0b1220;
+$code-text                  : #e2e8f0;
 
 /* Color codes used for the site */
-$danger-color               : #ee5f5b;
-$info-color                 : #2f7f93;
-$notice-color               : #7a8288;
-$success-color              : #62c462;
-$warning-color              : #f89406;
+$danger-color               : #ef4444;
+$info-color                 : #22c1b6;
+$notice-color               : #f59f86;
+$success-color              : #22c55e;
+$warning-color              : #f59e0b;
 
 /* Other basic settings for the template */
-$border-radius              : 4px;
-$box-shadow                 : 0 1px 1px rgba(0, 0, 0, 0.125);
-$global-transition          : all 0.2s ease-in-out;
+$border-radius              : 12px;
+$box-shadow                 : 0 2px 6px rgba(0, 0, 0, 0.55);
+$global-transition          : all 0.25s ease;
 $masthead-height            : 70px;
 $navicon-width              : 28px;
 $navicon-height             : 4px;
@@ -35,20 +35,30 @@ $sidebar-screen-min-width   : 1024px;
 
 /* Dark theme for the site */
 html[data-theme="dark"] {
-    --global-base-color                 : #{$background};
-    --global-bg-color                   : #{$background};
-    --global-footer-bg-color            : #{$background};
-    --global-border-color               : #{$light-gray};
-    --global-dark-border-color          : #{$background-light};
-    --global-code-background-color      : #fafafa;
-    --global-code-text-color            : #{$darker-gray};
-    --global-fig-caption-color          : #{$light-gray};
-    --global-link-color                 : #{$link};
-    --global-link-color-hover           : #{$link-dark};
-    --global-link-color-visited         : #{$link-light};
-    --global-masthead-link-color        : #{$text};
-    --global-masthead-link-color-hover  : #{$background-light};
-    --global-text-color                 : #{$text};
-    --global-text-color-light           : #f3f3f3;
-    --global-thead-color                : #{$background-lighter};
+    --global-base-color                 : #{$accent};
+    --global-bg-color                   : #{$bg};
+    --global-footer-bg-color            : #{$bg-alt};
+    --global-border-color               : #{$border};
+    --global-dark-border-color          : #{$border-strong};
+    --global-code-background-color      : #{$code-bg};
+    --global-code-text-color            : #{$code-text};
+    --global-fig-caption-color          : #{$ink-muted};
+    --global-link-color                 : #{$accent};
+    --global-link-color-hover           : #{$accent-strong};
+    --global-link-color-visited         : #55d2c8;
+    --global-masthead-link-color        : #{$ink};
+    --global-masthead-link-color-hover  : #{$accent};
+    --global-text-color                 : #{$ink};
+    --global-text-color-light           : #{$ink-muted};
+    --global-thead-color                : #1b2638;
+    --custom-bg-gradient                : radial-gradient(900px circle at 10% -10%, rgba(34, 193, 182, 0.12) 0%, transparent 60%), radial-gradient(800px circle at 85% 10%, rgba(245, 159, 134, 0.12) 0%, transparent 55%), linear-gradient(180deg, #0f172a 0%, #111827 100%);
+    --custom-surface                    : #{$surface};
+    --custom-surface-alt                : #1b2b42;
+    --custom-accent                     : #{$accent};
+    --custom-accent-strong              : #{$accent-strong};
+    --custom-accent-soft                : rgba(34, 193, 182, 0.18);
+    --custom-accent-warm                : #{$accent-warm};
+    --custom-shadow                     : 0 24px 50px rgba(0, 0, 0, 0.45);
+    --custom-shadow-soft                : 0 12px 30px rgba(0, 0, 0, 0.35);
+    --custom-card-border                : rgba(34, 193, 182, 0.2);
 }

@@ -1,13 +1,16 @@
 /* ==========================================================================
-   MASTHEAD
+   MASTHEAD - Cyber Theme
    ========================================================================== */
 
 .masthead {
   position: fixed;
-  background: var(--global-bg-color);
+  background: rgba(10, 14, 39, 0.95);
+  backdrop-filter: blur(15px);
   height: fit-content;
   top: 0;
   width: 100%;
+  border-bottom: 1px solid rgba(0, 255, 240, 0.2);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
 
   -webkit-animation: intro 0.3s both;
           animation: intro 0.3s both;
@@ -15,20 +18,11 @@
           animation-delay: 0.15s;
   z-index: 20;
 
-  &::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    height: 1px;
-    background: var(--global-border-color);
-    width: 100%;
-  }
-
   &__inner-wrap {
     @include container;
     @include clearfix;
-    padding: 0.5em 1em;
-    font-family: $sans-serif-narrow;
+    padding: 0.75em 1.5em;
+    font-family: 'Space Mono', monospace;
 
     @include breakpoint($x-large) {
       max-width: $x-large;
@@ -40,6 +34,13 @@
 
     a {
       text-decoration: none;
+      color: rgba(255, 255, 255, 0.85);
+      transition: all 0.3s ease;
+
+      &:hover {
+        color: #00fff0;
+        text-shadow: 0 0 10px rgba(0, 255, 240, 0.5);
+      }
     }
   }
 }
@@ -55,7 +56,7 @@
 }
 
 .masthead__menu-item {
-  background-color: var(--global-bg-color);
+  background-color: transparent;
   display: block;
   list-style-type: none;
   white-space: nowrap;
@@ -63,5 +64,44 @@
   &--lg {
     padding-right: 2em;
     font-weight: 700;
+    
+    a {
+      color: #00fff0;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      font-size: 1.1rem;
+      
+      &:hover {
+        color: #ff006e;
+      }
+    }
+  }
+
+  a {
+    padding: 0.5rem 1rem;
+    display: block;
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      width: 0;
+      height: 2px;
+      background: #00fff0;
+      transform: translateX(-50%);
+      transition: width 0.3s ease;
+    }
+
+    &:hover::after {
+      width: 80%;
+    }
+  }
+
+  &#theme-toggle a {
+    &::after {
+      display: none;
+    }
   }
 }
