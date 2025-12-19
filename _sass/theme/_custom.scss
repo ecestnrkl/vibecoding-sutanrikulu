@@ -1,0 +1,50 @@
+/* ==========================================================================
+   CUSTOM THEME - Blau, Lila, Weiß
+   ========================================================================== */
+
+/* Color codes used for the custom theme */
+$custom-blue                : #2563eb;
+$custom-purple              : #7c3aed;
+$custom-light-purple        : #a78bfa;
+$custom-dark-blue           : #1e40af;
+$custom-bg-gradient         : #f5f3ff;
+$custom-bg-light            : #ede9fe;
+$custom-text-dark           : #312e81;
+$custom-text-light          : #6366f1;
+
+/* Color codes used for the site */
+$danger-color               : #ee5f5b;
+$info-color                 : #0066cc;
+$notice-color               : #8b5cf6;
+$success-color              : #62c462;
+$warning-color              : #f89406;
+
+/* Other basic settings for the template */
+$border-radius              : 4px;
+$box-shadow                 : 0 1px 1px rgba(0, 0, 0, 0.125);
+$global-transition          : all 0.2s ease-in-out;
+$masthead-height            : 70px;
+$navicon-width              : 28px;
+$navicon-height             : 4px;
+$sidebar-link-max-width     : 250px;
+$sidebar-screen-min-width   : 1024px;
+
+/* Custom theme for the site */
+html[data-theme="custom"] {
+    --global-base-color                 : #{$custom-purple};
+    --global-bg-color                   : #{$custom-bg-gradient};
+    --global-footer-bg-color            : #{$custom-bg-light};
+    --global-border-color               : #{$custom-light-purple};
+    --global-dark-border-color          : #{$custom-purple};
+    --global-code-background-color      : #ffffff;
+    --global-code-text-color            : #{$custom-text-dark};
+    --global-fig-caption-color          : #{$custom-purple};
+    --global-link-color                 : #{$custom-blue};
+    --global-link-color-hover           : #{$custom-purple};
+    --global-link-color-visited         : #{$custom-purple};
+    --global-masthead-link-color        : #{$custom-text-dark};
+    --global-masthead-link-color-hover  : #{$custom-purple};
+    --global-text-color                 : #{$custom-text-dark};
+    --global-text-color-light           : #{$custom-text-light};
+    --global-thead-color                : #{$custom-light-purple};
+}
