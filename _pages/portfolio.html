@@ -2,13 +2,49 @@
 layout: archive
 title: "Portfolio"
 permalink: /portfolio/
-author_profile: true
+author_profile: false
 ---
 
 {% include base_path %}
 
+<div class="portfolio-cyber-container">
+  <div class="portfolio-cyber-header">
+    <h1 class="portfolio-cyber-header__title">Case Studies</h1>
+    <p class="portfolio-cyber-header__subtitle">// Where design strategy meets technical execution</p>
+  </div>
 
-{% for post in site.portfolio %}
-  {% include archive-single.html %}
-{% endfor %}
+  <div class="portfolio-cyber-grid">
+    {% for post in site.portfolio %}
+      <div class="portfolio-cyber-card">
+        {% if post.header.teaser %}
+          <div class="portfolio-cyber-card__image">
+            <img src="{{ post.header.teaser | prepend: '/images/' | prepend: base_path }}" alt="{{ post.title }}">
+          </div>
+        {% endif %}
+        
+        <div class="portfolio-cyber-card__content">
+          <h2 class="portfolio-cyber-card__title">
+            <a href="{{ base_path }}{{ post.url }}">{{ post.title }}</a>
+          </h2>
+          
+          {% if post.excerpt %}
+            <p class="portfolio-cyber-card__excerpt">{{ post.excerpt | markdownify | strip_html | truncatewords: 30 }}</p>
+          {% endif %}
+          
+          {% if post.tech_stack %}
+            <div class="portfolio-cyber-card__tags">
+              {% for tech in post.tech_stack %}
+                <span class="portfolio-cyber-tag">{{ tech }}</span>
+              {% endfor %}
+            </div>
+          {% endif %}
+          
+          <a href="{{ base_path }}{{ post.url }}" class="portfolio-cyber-card__link">
+            View Case Study →
+          </a>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+</div>
 
