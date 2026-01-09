@@ -2,26 +2,55 @@
    PORTFOLIO PAGE - Cyber Theme
    ========================================================================== */
 
+// Default light theme background
+.portfolio-cyber-container {
+  background: linear-gradient(180deg, #f8f4ee 0%, #efe6db 100%);
+}
+
+// Dark theme background
+[data-theme="dark"],
+[data-theme="custom"] {
+  .portfolio-cyber-container {
+    background: linear-gradient(180deg, #0a0e27 0%, #1a1e3f 100%);
+  }
+}
+
 .portfolio-header {
   text-align: center;
   padding: 5rem 2rem 3rem;
-  background: linear-gradient(180deg, rgba(10, 14, 39, 0.9) 0%, transparent 100%);
+  background: linear-gradient(180deg, rgba(255, 250, 244, 0.9) 0%, transparent 100%);
   
   .portfolio-title {
     font-family: 'Archivo Black', sans-serif;
     font-size: clamp(2.5rem, 6vw, 4rem);
-    color: #00fff0;
+    color: #0f766e;
     text-transform: uppercase;
     margin: 0 0 1rem 0;
     letter-spacing: -0.02em;
-    text-shadow: 0 0 30px rgba(0, 255, 240, 0.4);
+    text-shadow: none;
   }
   
   .portfolio-subtitle {
     font-family: 'Space Mono', monospace;
     font-size: clamp(1rem, 2vw, 1.2rem);
-    color: rgba(255, 255, 255, 0.7);
+    color: rgba(31, 41, 51, 0.7);
     letter-spacing: 0.05em;
+  }
+}
+
+[data-theme="dark"],
+[data-theme="custom"] {
+  .portfolio-header {
+    background: linear-gradient(180deg, rgba(10, 14, 39, 0.9) 0%, transparent 100%);
+    
+    .portfolio-title {
+      color: #00fff0;
+      text-shadow: 0 0 30px rgba(0, 255, 240, 0.4);
+    }
+    
+    .portfolio-subtitle {
+      color: rgba(255, 255, 255, 0.7);
+    }
   }
 }
 
@@ -41,18 +70,18 @@
 }
 
 .portfolio-card {
-  background: rgba(20, 25, 50, 0.7);
+  background: rgba(255, 255, 255, 0.9);
   backdrop-filter: blur(15px);
-  border: 1px solid rgba(0, 255, 240, 0.2);
+  border: 2px solid rgba(15, 118, 110, 0.15);
   overflow: hidden;
   transition: all 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
   
   &:hover {
     transform: translateY(-12px);
-    border-color: #00fff0;
+    border-color: #0f766e;
     box-shadow: 
-      0 20px 60px rgba(0, 0, 0, 0.6),
-      0 0 40px rgba(0, 255, 240, 0.2);
+      0 20px 60px rgba(15, 23, 42, 0.15),
+      0 0 20px rgba(15, 118, 110, 0.2);
     
     .portfolio-card__image img {
       transform: scale(1.05);
@@ -60,22 +89,21 @@
     }
     
     .portfolio-card__title a {
-      color: #00fff0;
-      text-shadow: 0 0 15px rgba(0, 255, 240, 0.5);
+      color: #e07a5f;
     }
   }
   
   &__image {
     height: 240px;
     overflow: hidden;
-    background: rgba(10, 14, 39, 0.5);
+    background: rgba(239, 230, 219, 0.3);
     position: relative;
     
     &::before {
       content: '';
       position: absolute;
       inset: 0;
-      background: linear-gradient(180deg, transparent 0%, rgba(10, 14, 39, 0.7) 100%);
+      background: linear-gradient(180deg, transparent 0%, rgba(239, 230, 219, 0.5) 100%);
       z-index: 1;
     }
     
@@ -99,7 +127,7 @@
     line-height: 1.2;
     
     a {
-      color: rgba(255, 255, 255, 0.9);
+      color: rgba(31, 41, 51, 0.9);
       text-decoration: none;
       transition: all 0.3s ease;
     }
@@ -109,7 +137,7 @@
     font-family: 'DM Sans', sans-serif;
     font-size: 1rem;
     line-height: 1.6;
-    color: rgba(255, 255, 255, 0.7);
+    color: rgba(31, 41, 51, 0.7);
     margin-bottom: 1.5rem;
   }
   
@@ -119,7 +147,7 @@
     flex-wrap: wrap;
     font-family: 'Space Mono', monospace;
     font-size: 0.8rem;
-    color: #ff006e;
+    color: #e07a5f;
     text-transform: uppercase;
     letter-spacing: 0.1em;
   }
@@ -127,20 +155,70 @@
   &__link {
     font-family: 'Space Mono', monospace;
     font-size: 0.85rem;
-    color: #00fff0;
+    color: #0f766e;
     text-decoration: none;
     text-transform: uppercase;
     letter-spacing: 0.1em;
     padding: 0.8rem 1.5rem;
-    border: 2px solid #00fff0;
+    border: 2px solid #0f766e;
     display: inline-block;
     clip-path: polygon(8% 0%, 100% 0%, 92% 100%, 0% 100%);
     transition: all 0.3s ease;
     
     &:hover {
-      background: #00fff0;
-      color: #0a0e27;
+      background: #0f766e;
+      color: #ffffff;
       transform: translateY(-2px);
+    }
+  }
+}
+
+[data-theme="dark"],
+[data-theme="custom"] {
+  .portfolio-card {
+    background: rgba(20, 25, 50, 0.7);
+    border: 1px solid rgba(0, 255, 240, 0.2);
+    
+    &:hover {
+      border-color: #00fff0;
+      box-shadow: 
+        0 20px 60px rgba(0, 0, 0, 0.6),
+        0 0 40px rgba(0, 255, 240, 0.2);
+      
+      .portfolio-card__title a {
+        color: #00fff0;
+        text-shadow: 0 0 15px rgba(0, 255, 240, 0.5);
+      }
+    }
+    
+    &__image {
+      background: rgba(10, 14, 39, 0.5);
+      
+      &::before {
+        background: linear-gradient(180deg, transparent 0%, rgba(10, 14, 39, 0.7) 100%);
+      }
+    }
+    
+    &__title a {
+      color: rgba(255, 255, 255, 0.9);
+    }
+    
+    &__excerpt {
+      color: rgba(255, 255, 255, 0.7);
+    }
+    
+    &__meta {
+      color: #ff006e;
+    }
+    
+    &__link {
+      color: #00fff0;
+      border-color: #00fff0;
+      
+      &:hover {
+        background: #00fff0;
+        color: #0a0e27;
+      }
     }
   }
 }
@@ -150,8 +228,15 @@
   max-width: 1400px;
   margin: 0 auto;
   padding: 4rem 2rem;
-  background: #0a0e27;
+  background: linear-gradient(180deg, #f8f4ee 0%, #efe6db 100%);
   min-height: 100vh;
+}
+
+[data-theme="dark"],
+[data-theme="custom"] {
+  .portfolio-cyber-container {
+    background: #0a0e27;
+  }
 }
 
 // Header
@@ -159,28 +244,46 @@
   text-align: center;
   margin-bottom: 4rem;
   padding: 3rem 2rem;
-  background: rgba(10, 14, 39, 0.95);
+  background: rgba(255, 250, 244, 0.95);
   backdrop-filter: blur(15px);
-  border-bottom: 2px solid rgba(0, 255, 240, 0.3);
+  border-bottom: 2px solid rgba(15, 118, 110, 0.2);
 
   &__title {
     font-family: 'Archivo Black', sans-serif;
     font-size: clamp(2.5rem, 6vw, 4rem);
-    color: #00fff0;
+    color: #0f766e;
     text-transform: uppercase;
     letter-spacing: -0.02em;
     margin: 0 0 1rem 0;
-    text-shadow: 
-      0 0 20px rgba(0, 255, 240, 0.5),
-      0 0 40px rgba(0, 255, 240, 0.3);
-    animation: glowPulse 3s ease-in-out infinite;
+    text-shadow: none;
+    animation: none;
   }
 
   &__subtitle {
     font-family: 'Space Mono', monospace;
     font-size: 1.1rem;
-    color: rgba(255, 255, 255, 0.7);
+    color: rgba(31, 41, 51, 0.7);
     letter-spacing: 0.05em;
+  }
+}
+
+[data-theme="dark"],
+[data-theme="custom"] {
+  .portfolio-cyber-header {
+    background: rgba(10, 14, 39, 0.95);
+    border-bottom: 2px solid rgba(0, 255, 240, 0.3);
+    
+    &__title {
+      color: #00fff0;
+      text-shadow: 
+        0 0 20px rgba(0, 255, 240, 0.5),
+        0 0 40px rgba(0, 255, 240, 0.3);
+      animation: glowPulse 3s ease-in-out infinite;
+    }
+    
+    &__subtitle {
+      color: rgba(255, 255, 255, 0.7);
+    }
   }
 }
 
@@ -197,26 +300,26 @@
 
 // Card
 .portfolio-cyber-card {
-  background: rgba(20, 25, 50, 0.95);
+  background: rgba(255, 255, 255, 0.9);
   backdrop-filter: blur(15px);
-  border: 1px solid rgba(255, 0, 110, 0.3);
+  border: 2px solid rgba(15, 118, 110, 0.15);
   overflow: hidden;
   transform: rotate(1deg);
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover {
     transform: rotate(0deg) translateY(-6px) scale(1.02);
-    border-color: #00fff0;
+    border-color: #e07a5f;
     box-shadow: 
-      0 15px 40px rgba(0, 0, 0, 0.4),
-      0 0 30px rgba(0, 255, 240, 0.2);
+      0 15px 40px rgba(15, 23, 42, 0.12),
+      0 0 30px rgba(224, 122, 95, 0.2);
   }
 
   &__image {
     position: relative;
     aspect-ratio: 16 / 9;
     overflow: hidden;
-    border-bottom: 2px solid #00fff0;
+    border-bottom: 2px solid #0f766e;
 
     img {
       width: 100%;
@@ -230,7 +333,7 @@
       content: '';
       position: absolute;
       inset: 0;
-      background: linear-gradient(135deg, rgba(0, 255, 240, 0.1), rgba(255, 0, 110, 0.1));
+      background: linear-gradient(135deg, rgba(15, 118, 110, 0.08), rgba(224, 122, 95, 0.08));
       opacity: 0;
       transition: opacity 0.4s ease;
     }
@@ -254,7 +357,7 @@
   &__title {
     font-family: 'Archivo Black', sans-serif;
     font-size: 1.5rem;
-    color: rgba(255, 255, 255, 0.9);
+    color: rgba(31, 41, 51, 0.9);
     margin: 0 0 1rem 0;
     line-height: 1.2;
 
@@ -264,7 +367,7 @@
       transition: color 0.3s ease;
 
       &:hover {
-        color: #00fff0;
+        color: #0f766e;
       }
     }
   }
@@ -273,7 +376,7 @@
     font-family: 'DM Sans', sans-serif;
     font-size: 1rem;
     line-height: 1.6;
-    color: rgba(255, 255, 255, 0.75);
+    color: rgba(31, 41, 51, 0.75);
     margin-bottom: 1.5rem;
   }
 
@@ -290,15 +393,58 @@
     gap: 0.5rem;
     font-family: 'Space Mono', monospace;
     font-size: 0.9rem;
-    color: #00fff0;
+    color: #0f766e;
     text-decoration: none;
     text-transform: uppercase;
     letter-spacing: 0.1em;
     transition: all 0.3s ease;
 
     &:hover {
-      color: #ff006e;
+      color: #e07a5f;
       transform: translateX(4px);
+    }
+  }
+}
+
+[data-theme="dark"],
+[data-theme="custom"] {
+  .portfolio-cyber-card {
+    background: rgba(20, 25, 50, 0.95);
+    border: 1px solid rgba(255, 0, 110, 0.3);
+    
+    &:hover {
+      border-color: #00fff0;
+      box-shadow: 
+        0 15px 40px rgba(0, 0, 0, 0.4),
+        0 0 30px rgba(0, 255, 240, 0.2);
+    }
+    
+    &__image {
+      border-bottom-color: #00fff0;
+      
+      &::after {
+        background: linear-gradient(135deg, rgba(0, 255, 240, 0.1), rgba(255, 0, 110, 0.1));
+      }
+    }
+    
+    &__title {
+      color: rgba(255, 255, 255, 0.9);
+      
+      a:hover {
+        color: #00fff0;
+      }
+    }
+    
+    &__excerpt {
+      color: rgba(255, 255, 255, 0.75);
+    }
+    
+    &__link {
+      color: #00fff0;
+      
+      &:hover {
+        color: #ff006e;
+      }
     }
   }
 }
@@ -306,9 +452,9 @@
 .portfolio-cyber-tag {
   display: inline-block;
   padding: 0.3rem 0.8rem;
-  background: rgba(10, 14, 39, 0.9);
-  border: 1px solid #00fff0;
-  color: #00fff0;
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid #0f766e;
+  color: #0f766e;
   font-family: 'Space Mono', monospace;
   font-size: 0.7rem;
   text-transform: uppercase;
@@ -316,9 +462,24 @@
   transition: all 0.3s ease;
 
   &:hover {
-    background: rgba(0, 255, 240, 0.1);
-    border-color: #ff006e;
-    color: #ff006e;
+    background: rgba(15, 118, 110, 0.1);
+    border-color: #e07a5f;
+    color: #e07a5f;
+  }
+}
+
+[data-theme="dark"],
+[data-theme="custom"] {
+  .portfolio-cyber-tag {
+    background: rgba(10, 14, 39, 0.9);
+    border-color: #00fff0;
+    color: #00fff0;
+    
+    &:hover {
+      background: rgba(0, 255, 240, 0.1);
+      border-color: #ff006e;
+      color: #ff006e;
+    }
   }
 }
 
@@ -342,18 +503,25 @@
 }
 
 // Override default archive layout for cyber pages
-.archive:has(.portfolio-cyber-container) {
-  margin: 0;
-  padding: 0;
-  max-width: none;
-}
-
 #main:has(.portfolio-cyber-container) {
   margin: 0;
   padding: 0;
   max-width: none;
-}
-
-.page__title:has(+ .portfolio-cyber-container) {
-  display: none;
+  display: block;
+  
+  .sidebar {
+    display: none;
+  }
+  
+  .archive {
+    width: 100%;
+    max-width: none;
+    margin: 0;
+    padding: 0;
+    float: none;
+  }
+  
+  .page__title {
+    display: none;
+  }
 }

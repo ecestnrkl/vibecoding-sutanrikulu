@@ -22,8 +22,8 @@ redirect_from:
     <div class="cv-cyber-timeline">
       <div class="cv-cyber-item">
         <h3 class="cv-cyber-item__title">M.Sc. User Experience Design</h3>
-        <div class="cv-cyber-item__company">University Name</div>
-        <div class="cv-cyber-item__meta">2024 (expected)</div>
+        <div class="cv-cyber-item__company">Ingolstadt University of Applied Sciences</div>
+        <div class="cv-cyber-item__meta">Oct 2025 - Mar 2027</div>
         <div class="cv-cyber-item__description">
           <p>Focus: Human-Centered Design, ISO 9241-210, Strategic UX Methodology</p>
         </div>
@@ -31,11 +31,10 @@ redirect_from:
 
       <div class="cv-cyber-item">
         <h3 class="cv-cyber-item__title">B.Sc. Informatics and Design</h3>
-        <div class="cv-cyber-item__company">University Name</div>
-        <div class="cv-cyber-item__meta">2022</div>
+        <div class="cv-cyber-item__company">Munich University of Applied Sciences</div>
+        <div class="cv-cyber-item__meta">Oct 2021 - Sep 2025 | Grade: 1.7</div>
         <div class="cv-cyber-item__description">
-          <p>Foundation: Java, Algorithms, Logic, Visual Design<br>
-          Thesis: Requirements-driven evaluation of Design-to-Code tools</p>
+          <p>Thesis: Requirements-driven evaluation of Design-to-Code tools</p>
         </div>
       </div>
     </div>
@@ -46,43 +45,67 @@ redirect_from:
     
     <div class="cv-cyber-timeline">
       <div class="cv-cyber-item">
-        <h3 class="cv-cyber-item__title">Working Student / Intern — NLP & AI Applications</h3>
-        <div class="cv-cyber-item__company">BMW Group | Munich, Germany</div>
-        <div class="cv-cyber-item__meta">Jan 2023 - Present</div>
+        <h3 class="cv-cyber-item__title">Bachelor Thesis — Design-to-Code Tools Evaluation</h3>
+        <div class="cv-cyber-item__company">BMW AG | Munich, Germany</div>
+        <div class="cv-cyber-item__meta">Mar 2025 - Sep 2025</div>
         <div class="cv-cyber-item__description">
-          <p>Developing scalable frontend interfaces for enterprise AI applications. Bridging complex backend AI services with intuitive UX for non-technical stakeholders.</p>
+          <p>Requirements-driven evaluation of modern Design-to-Code tools to support strategic adoption decisions.</p>
           <ul>
-            <li>Built Angular applications integrating TypeScript, Java backends, Docker, and REST APIs</li>
-            <li>Shipped features in large-scale agile environment (Scrum)</li>
-            <li>Balanced innovation with enterprise constraints and technical debt management</li>
+            <li>Conducted systematic benchmarking of design-to-code solutions and supported Proof-of-Concept phase</li>
+            <li>Designed and executed company-wide developer survey to identify pain points and quantify time-efficiency gains</li>
+            <li>Developed strategic business case based on structured literature review and stakeholder requirements</li>
           </ul>
           <div class="cv-cyber-skills">
+            <span class="cv-cyber-skill-badge">User Research</span>
+            <span class="cv-cyber-skill-badge">Requirements Engineering</span>
+            <span class="cv-cyber-skill-badge">Benchmarking</span>
+            <span class="cv-cyber-skill-badge">Strategic Analysis</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="cv-cyber-item">
+        <h3 class="cv-cyber-item__title">Intern & Working Student — UX/UI Design & Web Development</h3>
+        <div class="cv-cyber-item__company">BMW AG | Munich, Germany</div>
+        <div class="cv-cyber-item__meta">Aug 2023 - Jan 2024 | Mar 2024 - Dec 2024</div>
+        <div class="cv-cyber-item__description">
+          <p>UX/UI Design and Web Development for NLP/AI-based applications. Bridging complex AI services with intuitive interfaces.</p>
+          <ul>
+            <li>Co-developed frontend components for NLP/AI applications using Angular and Java, translating complex logic into user-friendly interfaces</li>
+            <li>Managed requirements engineering by gathering customer needs and translating them into User Stories and Epics</li>
+            <li>Owned end-to-end design process: created high-fidelity prototypes and implemented functionality concepts</li>
+            <li>Collaborated on international projects to develop practical AI use cases for vehicle development and quality management</li>
+          </ul>
+          <div class="cv-cyber-skills">
+            <span class="cv-cyber-skill-badge">React</span>
             <span class="cv-cyber-skill-badge">Angular</span>
             <span class="cv-cyber-skill-badge">TypeScript</span>
             <span class="cv-cyber-skill-badge">Java</span>
+            <span class="cv-cyber-skill-badge">Figma</span>
             <span class="cv-cyber-skill-badge">Docker</span>
-            <span class="cv-cyber-skill-badge">REST APIs</span>
             <span class="cv-cyber-skill-badge">Git</span>
           </div>
         </div>
       </div>
 
       <div class="cv-cyber-item">
-        <h3 class="cv-cyber-item__title">Product Management Working Student</h3>
-        <div class="cv-cyber-item__company">Check24 | Munich, Germany</div>
-        <div class="cv-cyber-item__meta">Jun 2022 - Dec 2022</div>
+        <h3 class="cv-cyber-item__title">Working Student — Product Management</h3>
+        <div class="cv-cyber-item__company">Check24 Autoteile GmbH | Munich, Germany</div>
+        <div class="cv-cyber-item__meta">Feb 2023 - Jul 2023</div>
         <div class="cv-cyber-item__description">
-          <p>Optimized user experience on high-traffic comparison platforms. Translated business requirements into technical implementation.</p>
+          <p>Supported innovative product development lifecycle from conception to implementation of new features.</p>
           <ul>
-            <li>Implemented chatbot features and mobile/web flow optimizations</li>
-            <li>Conducted QA testing and agile product discovery</li>
-            <li>Learned consumer product pace: speed and conversion as primary metrics</li>
+            <li>Supported development lifecycle from initial conception to implementation of new Chatbot features</li>
+            <li>Designed and tested new features for native apps (iOS and Android), ensuring consistent UX across platforms</li>
+            <li>Took ownership of independent projects, coordinating with Product Management, IT, and Management</li>
+            <li>Conducted quality assurance and testing during implementation phase to ensure high-quality releases</li>
           </ul>
           <div class="cv-cyber-skills">
-            <span class="cv-cyber-skill-badge">React</span>
+            <span class="cv-cyber-skill-badge">UXPin</span>
+            <span class="cv-cyber-skill-badge">JIRA</span>
+            <span class="cv-cyber-skill-badge">Confluence</span>
+            <span class="cv-cyber-skill-badge">Scrum</span>
             <span class="cv-cyber-skill-badge">Agile</span>
-            <span class="cv-cyber-skill-badge">A/B Testing</span>
-            <span class="cv-cyber-skill-badge">Analytics</span>
           </div>
         </div>
       </div>
@@ -94,22 +117,32 @@ redirect_from:
     
     <div class="cv-cyber-skills-grid">
       <div class="cv-cyber-skill-category">
-        <h4 class="cv-cyber-skill-category__title">Frontend Frameworks</h4>
+        <h4 class="cv-cyber-skill-category__title">Frontend Development</h4>
         <div class="cv-cyber-skills">
           <span class="cv-cyber-skill-badge">React</span>
           <span class="cv-cyber-skill-badge">Angular</span>
+          <span class="cv-cyber-skill-badge">React Native</span>
+          <span class="cv-cyber-skill-badge">HTML5</span>
+          <span class="cv-cyber-skill-badge">CSS3</span>
         </div>
       </div>
 
       <div class="cv-cyber-skill-category">
-        <h4 class="cv-cyber-skill-category__title">Languages</h4>
+        <h4 class="cv-cyber-skill-category__title">Programming Languages</h4>
         <div class="cv-cyber-skills">
           <span class="cv-cyber-skill-badge">TypeScript</span>
           <span class="cv-cyber-skill-badge">JavaScript</span>
           <span class="cv-cyber-skill-badge">Java</span>
           <span class="cv-cyber-skill-badge">Python</span>
-          <span class="cv-cyber-skill-badge">HTML5</span>
-          <span class="cv-cyber-skill-badge">SCSS</span>
+        </div>
+      </div>
+
+      <div class="cv-cyber-skill-category">
+        <h4 class="cv-cyber-skill-category__title">Backend & Database</h4>
+        <div class="cv-cyber-skills">
+          <span class="cv-cyber-skill-badge">Node.js</span>
+          <span class="cv-cyber-skill-badge">MongoDB</span>
+          <span class="cv-cyber-skill-badge">REST APIs</span>
         </div>
       </div>
 
@@ -120,16 +153,19 @@ redirect_from:
           <span class="cv-cyber-skill-badge">Adobe XD</span>
           <span class="cv-cyber-skill-badge">UXPin</span>
           <span class="cv-cyber-skill-badge">ISO 9241-210</span>
-          <span class="cv-cyber-skill-badge">Prototyping</span>
+          <span class="cv-cyber-skill-badge">Human-Centered Design</span>
+          <span class="cv-cyber-skill-badge">VUI Design</span>
         </div>
       </div>
 
       <div class="cv-cyber-skill-category">
-        <h4 class="cv-cyber-skill-category__title">Tools & Methods</h4>
+        <h4 class="cv-cyber-skill-category__title">Tools & Workflow</h4>
         <div class="cv-cyber-skills">
           <span class="cv-cyber-skill-badge">Git</span>
           <span class="cv-cyber-skill-badge">Docker</span>
-          <span class="cv-cyber-skill-badge">REST APIs</span>
+          <span class="cv-cyber-skill-badge">JIRA</span>
+          <span class="cv-cyber-skill-badge">Confluence</span>
+          <span class="cv-cyber-skill-badge">Bitbucket</span>
           <span class="cv-cyber-skill-badge">Agile/Scrum</span>
         </div>
       </div>
@@ -137,35 +173,13 @@ redirect_from:
       <div class="cv-cyber-skill-category">
         <h4 class="cv-cyber-skill-category__title">Emerging Technologies</h4>
         <div class="cv-cyber-skills">
-          <span class="cv-cyber-skill-badge">LLM/AI</span>
+          <span class="cv-cyber-skill-badge">AI/LLM</span>
+          <span class="cv-cyber-skill-badge">Voiceflow</span>
           <span class="cv-cyber-skill-badge">WebXR</span>
           <span class="cv-cyber-skill-badge">Unity</span>
-          <span class="cv-cyber-skill-badge">Unreal</span>
+          <span class="cv-cyber-skill-badge">Unreal Engine</span>
         </div>
       </div>
-    </div>
-  </section>
-
-  <section class="cv-cyber-section">
-    <h2 class="cv-cyber-section__title">Publications</h2>
-    
-    <div class="cv-cyber-timeline">
-      {% for post in site.publications reversed %}
-        <div class="cv-cyber-item">
-          <h3 class="cv-cyber-item__title">{{ post.title }}</h3>
-          {% if post.venue %}
-            <div class="cv-cyber-item__company">{{ post.venue }}</div>
-          {% endif %}
-          {% if post.date %}
-            <div class="cv-cyber-item__meta">{{ post.date | date: "%B %Y" }}</div>
-          {% endif %}
-          {% if post.excerpt %}
-            <div class="cv-cyber-item__description">
-              <p>{{ post.excerpt | markdownify | strip_html }}</p>
-            </div>
-          {% endif %}
-        </div>
-      {% endfor %}
     </div>
   </section>
 

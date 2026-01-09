@@ -16,7 +16,7 @@ redirect_from:
 <div class="hero-content">
   <!-- Profile Image Left -->
   <div class="hero-visual">
-    <img src="/images/profile.png" alt="Ece Sutanrikulu" class="hero-image">
+    <img src="/images/ece-portrait.jpeg" alt="Ece Sutanrikulu" class="hero-image">
   </div>
 
   <!-- Main Content Right -->
