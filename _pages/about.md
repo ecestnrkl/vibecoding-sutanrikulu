@@ -3,6 +3,8 @@ permalink: /
 layout: splash
 title: "Ece Sutanrikulu"
 author_profile: false
+excerpt: "Creative Technologist & UX Engineer | Building the bridge between design vision and production reality"
+description: "Creative Technologist bridging design and engineering. Frontend expertise in React, Angular, TypeScript. Experience with BMW, Check24, AI prototyping, and WebXR."
 redirect_from: 
   - /about/
   - /about.html
@@ -16,7 +18,7 @@ redirect_from:
 <div class="hero-content">
   <!-- Profile Image Left -->
   <div class="hero-visual">
-    <img src="/images/ece-portrait.jpeg" alt="Ece Sutanrikulu" class="hero-image">
+    <img src="/images/ece-portrait.jpeg" alt="Ece Sutanrikulu - Creative Technologist and UX Engineer" class="hero-image" loading="eager">
   </div>
 
   <!-- Main Content Right -->

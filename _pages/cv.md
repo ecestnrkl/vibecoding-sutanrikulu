@@ -19,17 +19,17 @@ redirect_from:
   <!-- Career Path Visual Overview -->
   <section class="cv-career-path">
     <div class="cv-career-path__container">
-      <img src="/images/Careerpath_ai.png" alt="Career Path Timeline - From Informatics & Design Student to UX Designer & Developer" class="cv-career-path__image">
+      <img src="/images/Careerpath_ai.png" alt="Career path visualization showing journey from Informatics & Design student to Creative Technologist at BMW and Check24" class="cv-career-path__image" loading="lazy">
       
       <!-- AI-Generated Career Summary Audio -->
       <div class="cv-audio-summary">
         <div class="cv-audio-summary__header">
-          <i class="fa-solid fa-microphone-lines"></i>
+          <i class="fa-solid fa-microphone-lines" aria-hidden="true"></i>
           <span class="cv-audio-summary__label">AI Career Summary · Podcast Style</span>
         </div>
-        <audio controls class="cv-audio-summary__player">
+        <audio controls class="cv-audio-summary__player" aria-label="AI-generated career summary podcast - 2-3 minute overview of Ece's professional journey">
           <source src="/files/career-summary.m4a" type="audio/mp4">
-          Your browser does not support the audio element.
+          Your browser does not support the audio element. Please download the career summary from the link below.
         </audio>
       </div>
     </div>
