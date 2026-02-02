@@ -21,7 +21,7 @@ redirect_from:
 
   <!-- Main Content Right -->
   <div class="hero-main">
-    <h1 class="hero-name">Ece<br>Sutanrikulu</h1>
+    <h1 class="hero-name">Ece Sutanrikulu</h1>
 
     <div class="hero-ctas">
       <a href="#about" class="btn">About</a>
@@ -101,6 +101,6 @@ My code is clean and component-based because I think in design systems. My desig
 
 Seeking opportunities where design strategy meets technical execution. If you need someone who can prototype in code, argue for scalability, and ship resilient interfaces—let's talk.
 
-**Email:** [ece.sutanrikulu@example.com](mailto:ece.sutanrikulu@example.com)  
-**LinkedIn:** [linkedin.com/in/ece-sutanrikulu](#)  
-**GitHub:** [github.com/ecestnrkl](#)
+**Email:** [sutanrikulu.ece@gmail.com](mailto:sutanrikulu.ece@gmail.com)  
+**LinkedIn:** [linkedin.com/in/ece-sutanrikulu](https://www.linkedin.com/in/ece-sutanrikulu/)  
+**GitHub:** [github.com/ecestnrkl](https://github.com/ecestnrkl)

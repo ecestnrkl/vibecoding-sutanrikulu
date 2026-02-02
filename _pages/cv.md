@@ -28,12 +28,9 @@ redirect_from:
           <span class="cv-audio-summary__label">AI Career Summary · Podcast Style</span>
         </div>
         <audio controls class="cv-audio-summary__player">
-          <source src="/files/career-summary.mp3" type="audio/mpeg">
+          <source src="/files/career-summary.m4a" type="audio/mp4">
           Your browser does not support the audio element.
         </audio>
-        <p class="cv-audio-summary__transcript-link">
-          <a href="#transcript">Read transcript</a>
-        </p>
       </div>
     </div>
   </section>
