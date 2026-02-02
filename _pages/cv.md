@@ -16,6 +16,28 @@ redirect_from:
     <p class="cv-cyber-header__subtitle">// Building the bridge between design vision and technical reality</p>
   </div>
 
+  <!-- Career Path Visual Overview -->
+  <section class="cv-career-path">
+    <div class="cv-career-path__container">
+      <img src="/images/Careerpath_ai.png" alt="Career Path Timeline - From Informatics & Design Student to UX Designer & Developer" class="cv-career-path__image">
+      
+      <!-- AI-Generated Career Summary Audio -->
+      <div class="cv-audio-summary">
+        <div class="cv-audio-summary__header">
+          <i class="fa-solid fa-microphone-lines"></i>
+          <span class="cv-audio-summary__label">AI Career Summary · Podcast Style</span>
+        </div>
+        <audio controls class="cv-audio-summary__player">
+          <source src="/files/career-summary.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+        <p class="cv-audio-summary__transcript-link">
+          <a href="#transcript">Read transcript</a>
+        </p>
+      </div>
+    </div>
+  </section>
+
   <section class="cv-cyber-section">
     <h2 class="cv-cyber-section__title">Education</h2>
     

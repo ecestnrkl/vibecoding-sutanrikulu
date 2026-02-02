@@ -2,6 +2,18 @@
    DARK THEME
    ========================================================================== */
 
+/* HARD RESET: Navigation Button Variables - Dark Mode */
+:root[data-theme="dark"] {
+    --nav-btn-bg: rgba(255, 255, 255, 0.05);
+    --nav-btn-text: #00ffff;
+    --nav-btn-border: #00ffff;
+    --nav-btn-shadow: none;
+    --nav-btn-glow: 0 0 15px rgba(0, 255, 255, 0.6);
+    --nav-btn-hover-bg: rgba(0, 255, 255, 0.1);
+    --nav-btn-hover-opacity: 1;
+    --nav-btn-hover-glow: 0 0 25px rgba(0, 255, 255, 0.8), 0 0 40px rgba(0, 255, 255, 0.4);
+}
+
 /* Color codes used for the theme */
 $ink                        : #e2e8f0;
 $ink-muted                  : #9aa4b2;

@@ -15,6 +15,130 @@
   }
 }
 
+/* Career Path Visual Section */
+.cv-career-path {
+  margin: 3rem 0 4rem;
+  padding: 0;
+  
+  &__container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    
+    @media (max-width: 768px) {
+      padding: 0 1rem;
+    }
+  }
+  
+  &__image {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 12px;
+    box-shadow: 
+      0 10px 40px rgba(15, 23, 42, 0.1),
+      0 2px 8px rgba(15, 23, 42, 0.05);
+    transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+    border: 2px solid rgba(15, 118, 110, 0.1);
+    
+    &:hover {
+      transform: translateY(-4px);
+      box-shadow: 
+        0 20px 60px rgba(15, 23, 42, 0.15),
+        0 4px 16px rgba(15, 23, 42, 0.08);
+    }
+  }
+}
+
+/* Dark theme career path styling */
+[data-theme="dark"],
+[data-theme="custom"] {
+  .cv-career-path__image {
+    border-color: rgba(0, 255, 240, 0.2);
+    box-shadow: 
+      0 10px 40px rgba(0, 255, 240, 0.15),
+      0 0 30px rgba(0, 255, 240, 0.1);
+    
+    &:hover {
+      box-shadow: 
+        0 20px 60px rgba(0, 255, 240, 0.25),
+        0 0 50px rgba(0, 255, 240, 0.15);
+      border-color: rgba(0, 255, 240, 0.3);
+    }
+  }
+}
+
+/* AI Audio Summary Player */
+.cv-audio-summary {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  background: rgba(15, 118, 110, 0.05);
+  border-radius: 12px;
+  border: 1px solid rgba(15, 118, 110, 0.15);
+  
+  &__header {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 1rem;
+    
+    i {
+      color: #0f766e;
+      font-size: 1.2rem;
+    }
+  }
+  
+  &__label {
+    font-family: 'Space Mono', monospace;
+    font-size: 0.85rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: #0f766e;
+  }
+  
+  &__player {
+    width: 100%;
+    margin-bottom: 0.75rem;
+    border-radius: 8px;
+  }
+  
+  &__transcript-link {
+    margin: 0;
+    text-align: center;
+    font-size: 0.85rem;
+    
+    a {
+      color: #0f766e;
+      text-decoration: none;
+      border-bottom: 1px dashed #0f766e;
+      
+      &:hover {
+        border-bottom-style: solid;
+      }
+    }
+  }
+}
+
+/* Dark theme audio summary */
+[data-theme="dark"],
+[data-theme="custom"] {
+  .cv-audio-summary {
+    background: rgba(0, 255, 240, 0.05);
+    border-color: rgba(0, 255, 240, 0.2);
+    
+    &__header i,
+    &__label {
+      color: #00ffff;
+    }
+    
+    &__transcript-link a {
+      color: #00ffff;
+      border-bottom-color: #00ffff;
+    }
+  }
+}
+
 .cv-container {
   max-width: 900px;
   margin: 0 auto;

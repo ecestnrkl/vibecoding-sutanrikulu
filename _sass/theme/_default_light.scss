@@ -63,3 +63,15 @@ $sidebar-screen-min-width   : 1024px;
     --custom-shadow-soft                : 0 12px 30px rgba(15, 23, 42, 0.08);
     --custom-card-border                : rgba(15, 118, 110, 0.15);
 }
+
+/* HARD RESET: Navigation Button Variables - Light Mode (no data-theme attribute) */
+:root:not([data-theme]),
+:root[data-theme=""] {
+    --nav-btn-bg: #005a4e;
+    --nav-btn-text: #ffffff;
+    --nav-btn-border: #005a4e;
+    --nav-btn-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    --nav-btn-glow: none;
+    --nav-btn-hover-bg: #004237;
+    --nav-btn-hover-opacity: 0.9;
+}

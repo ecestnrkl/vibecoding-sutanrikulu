@@ -47,6 +47,24 @@ html[data-theme="custom"] {
     --custom-card-border                : rgba(79, 209, 255, 0.22);
 }
 
+/* WCAG-COMPLIANT: Navigation Button Variables - Custom/Palette Mode */
+:root[data-theme="custom"],
+:root[data-theme="palette"] {
+    /* Solid light blue background with dark text for contrast */
+    --nav-btn-bg: #4fd1ff;
+    --nav-btn-text: #0b1120;
+    --nav-btn-border: #3ab8e0;
+    --nav-btn-shadow: 0 4px 6px rgba(79, 209, 255, 0.3);
+    --nav-btn-glow: none;
+    
+    /* Hover: Darken background, keep dark text */
+    --nav-btn-hover-bg: #3ab8e0;
+    --nav-btn-hover-text: #0b1120;
+    --nav-btn-hover-opacity: 1;
+    --nav-btn-hover-shadow: 0 6px 12px rgba(79, 209, 255, 0.4);
+    --nav-btn-hover-glow: none;
+}
+
 /* Global polish */
 html body {
     background: var(--custom-bg-gradient, var(--global-bg-color));
