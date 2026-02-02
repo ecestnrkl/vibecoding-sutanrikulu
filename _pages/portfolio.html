@@ -15,36 +15,150 @@ author_profile: false
 
   <div class="portfolio-cyber-grid">
     {% for post in site.portfolio %}
-      <div class="portfolio-cyber-card">
-        {% if post.header.teaser %}
-          <div class="portfolio-cyber-card__image">
-            <img src="{{ post.header.teaser | prepend: '/images/' | prepend: base_path }}" alt="{{ post.title }}">
-          </div>
-        {% endif %}
-        
-        <div class="portfolio-cyber-card__content">
-          <h2 class="portfolio-cyber-card__title">
-            <a href="{{ base_path }}{{ post.url }}">{{ post.title }}</a>
-          </h2>
-          
-          {% if post.excerpt %}
-            <p class="portfolio-cyber-card__excerpt">{{ post.excerpt | markdownify | strip_html | truncatewords: 30 }}</p>
-          {% endif %}
-          
-          {% if post.tech_stack %}
-            <div class="portfolio-cyber-card__tags">
-              {% for tech in post.tech_stack %}
-                <span class="portfolio-cyber-tag">{{ tech }}</span>
-              {% endfor %}
+      <div class="portfolio-flip-card-wrapper">
+        <input type="checkbox" id="flip-{{ forloop.index }}" class="portfolio-flip-toggle">
+        <label for="flip-{{ forloop.index }}" class="portfolio-flip-card">
+          <!-- Front of Card -->
+          <div class="portfolio-flip-card__front">
+            {% if post.header.teaser %}
+              <div class="portfolio-flip-card__image">
+                <img src="{{ post.header.teaser | prepend: '/images/' | prepend: base_path }}" alt="{{ post.title }}" loading="lazy">
+                <div class="portfolio-flip-card__hover-overlay">
+                  <span class="portfolio-flip-card__hover-text">Click to flip</span>
+                </div>
+              </div>
+            {% endif %}
+            
+            <div class="portfolio-flip-card__content">
+              <h2 class="portfolio-flip-card__title">{{ post.title }}</h2>
+              
+              {% if post.excerpt %}
+                <p class="portfolio-flip-card__excerpt">{{ post.excerpt | markdownify | strip_html }}</p>
+              {% endif %}
+              
+              {% if post.tech_stack %}
+                <div class="portfolio-flip-card__tags">
+                  {% for tech in post.tech_stack limit:3 %}
+                    <span class="portfolio-cyber-tag">{{ tech }}</span>
+                  {% endfor %}
+                </div>
+              {% endif %}
             </div>
-          {% endif %}
+          </div>
           
-          <a href="{{ base_path }}{{ post.url }}" class="portfolio-cyber-card__link">
-            View Case Study →
-          </a>
-        </div>
+          <!-- Back of Card -->
+          <div class="portfolio-flip-card__back">
+            <div class="portfolio-flip-card__details">
+              <h3 class="portfolio-flip-card__back-title">{{ post.title }}</h3>
+              
+              {% if post.authors %}
+                <div class="portfolio-detail-item">
+                  <strong>Authors:</strong>
+                  <span>{{ post.authors }}</span>
+                </div>
+              {% endif %}
+              
+              {% if post.institution %}
+                <div class="portfolio-detail-item">
+                  <strong>Institution:</strong>
+                  <span>{{ post.institution }}</span>
+                </div>
+              {% endif %}
+              
+              {% if post.problem %}
+                <div class="portfolio-detail-item">
+                  <strong>Problem:</strong>
+                  <span>{{ post.problem }}</span>
+                </div>
+              {% endif %}
+              
+              {% if post.solution %}
+                <div class="portfolio-detail-item">
+                  <strong>Method:</strong>
+                  <span>{{ post.solution }}</span>
+                </div>
+              {% endif %}
+              
+              {% if post.impact %}
+                <div class="portfolio-detail-item">
+                  <strong>Outcomes:</strong>
+                  <span>{{ post.impact }}</span>
+                </div>
+              {% endif %}
+              
+              <div class="portfolio-flip-card__actions">
+                <a href="{{ base_path }}{{ post.url }}" class="portfolio-action-btn portfolio-action-btn--primary" onclick="event.stopPropagation();">
+                  Full Case Study
+                </a>
+                <button class="portfolio-action-btn portfolio-action-btn--secondary download-report"
+                        data-title="{{ post.title }}"
+                        data-authors="{{ post.authors }}"
+                        data-institution="{{ post.institution }}"
+                        data-problem="{{ post.problem }}"
+                        data-solution="{{ post.solution }}"
+                        data-impact="{{ post.impact }}"
+                        data-tech="{{ post.tech_stack | join: ', ' }}"
+                        onclick="event.stopPropagation();">
+                  <i class="fa-solid fa-download"></i> Download Report
+                </button>
+                {% if post.github %}
+                  <a href="{{ post.github }}" class="portfolio-action-btn portfolio-action-btn--secondary" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation();">
+                    <i class="fa-brands fa-github"></i> View Code
+                  </a>
+                {% elsif post.demo %}
+                  <a href="{{ post.demo }}" class="portfolio-action-btn portfolio-action-btn--secondary" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation();">
+                    <i class="fa-solid fa-external-link"></i> Live Demo
+                  </a>
+                {% endif %}
+              </div>
+            </div>
+          </div>
+        </label>
       </div>
     {% endfor %}
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const downloadButtons = document.querySelectorAll('.download-report');
+  
+  downloadButtons.forEach(button => {
+    button.addEventListener('click', function() {
+      const title = this.dataset.title || 'Project';
+      const authors = this.dataset.authors || '';
+      const institution = this.dataset.institution || '';
+      const problem = this.dataset.problem || '';
+      const solution = this.dataset.solution || '';
+      const impact = this.dataset.impact || '';
+      const tech = this.dataset.tech || '';
+      
+      let content = 'PROJECT OVERVIEW REPORT\n';
+      content += '='.repeat(80) + '\n\n';
+      content += title.toUpperCase() + '\n\n';
+      
+      if (authors) content += 'AUTHORS:\n' + authors + '\n\n';
+      if (institution) content += 'INSTITUTION:\n' + institution + '\n\n';
+      if (problem) content += 'PROBLEM:\n' + problem + '\n\n';
+      if (solution) content += 'METHOD:\n' + solution + '\n\n';
+      if (impact) content += 'OUTCOMES:\n' + impact + '\n\n';
+      if (tech) content += 'TECHNOLOGIES:\n' + tech + '\n\n';
+      
+      content += '='.repeat(80) + '\n';
+      content += 'Generated: ' + new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' }) + '\n';
+      content += 'Author: Ece Sutanrikulu\n';
+      content += 'Website: ecestnrkl.github.io\n';
+      
+      const blob = new Blob([content], { type: 'text/plain' });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = title.toLowerCase().replace(/[^a-z0-9]+/g, '_') + '_report.txt';
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+      URL.revokeObjectURL(url);
+    });
+  });
+});
+</script>
   </div>
 </div>
-

@@ -2,6 +2,7 @@
 title: "SkinGuide"
 excerpt: "Voice assistant that helps users identify their skin type and offers suitable ingredients for personalized skincare"
 collection: portfolio
+author_profile: true
 header:
   teaser: skinguide.jpg
 tech_stack:

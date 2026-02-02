@@ -2,8 +2,11 @@
 title: "EduCare"
 excerpt: "Web application improving communication between teachers and refugee parents"
 collection: portfolio
+author_profile: true
 header:
   teaser: educare.png
+authors: "Ece Sutanrikulu, Ann-Marie Atzkern, Berfin Berg, Karmen Florentina Bulai, Ilayda Güner"
+institution: "Munich University of Applied Sciences"
 tech_stack:
   - React
   - JavaScript
@@ -14,6 +17,7 @@ solution: "Developed a web application with calendar, messaging, and progress tr
 impact: "Improved teacher-parent communication for refugee families, supporting children's educational success"
 github: "https://github.com/ecestnrkl/EduCare"
 demo: "https://educaregruppef.onrender.com/"
+pdf: "educare-report.pdf"
 ---
 
 <div class="portfolio-meta">

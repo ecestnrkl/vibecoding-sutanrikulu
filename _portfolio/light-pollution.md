@@ -2,6 +2,7 @@
 title: "Light Pollution Visualization"
 excerpt: "Generative design project visualizing the impact of light pollution on bird flight patterns using p5.js and After Effects"
 collection: portfolio
+author_profile: true
 header:
   teaser: vogel.png
 tech_stack:

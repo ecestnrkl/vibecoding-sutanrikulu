@@ -1,7 +1,7 @@
 ---
 permalink: /
 layout: splash
-title: "Ece Sutanrikulu"
+title: "Home"
 author_profile: false
 excerpt: "Creative Technologist & UX Engineer | Building the bridge between design vision and production reality"
 description: "Creative Technologist bridging design and engineering. Frontend expertise in React, Angular, TypeScript. Experience with BMW, Check24, AI prototyping, and WebXR."

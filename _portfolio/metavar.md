@@ -2,6 +2,7 @@
 title: "METAVAR"
 excerpt: "Avatar design studio in the metaverse enabling individuals to shape their virtual identity"
 collection: portfolio
+author_profile: true
 header:
   teaser: metavar.png
 tech_stack:

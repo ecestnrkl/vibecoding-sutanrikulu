@@ -2,8 +2,11 @@
 title: "melodai"
 excerpt: "Visionary music label enriching AI-generated music with personality through creative collaborations"
 collection: portfolio
+author_profile: true
 header:
   teaser: melodai.png
+authors: "Ece Sutanrikulu"
+institution: "Munich University of Applied Sciences"
 tech_stack:
   - AI Music
   - Brand Design
@@ -14,6 +17,7 @@ solution: "Created a label concept that pairs AI music generation with creative 
 impact: "Explored new models for AI-human collaboration in creative industries"
 github: "https://github.com/ecestnrkl/melodai"
 figma: "https://www.figma.com/file/KeBRFdeOba3tL7st48vMXd/FuturesOfMusic_Melodai-(Community)"
+pdf: "melodai-concept.pdf"
 ---
 
 <div class="portfolio-meta">
